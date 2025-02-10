@@ -1,0 +1,10 @@
+
+<div id="<%= dom_id message %>" class="message-container">
+  <div class="message">
+    <%= message.content %>
+  </div>
+
+  <%= button_to 'Delete', message, method: :delete, data: { 
+    confirm: 'Are you sure?' }, class: "delete-button" %>
+</div>
+

@@ -1,0 +1,64 @@
+html, body, #chatapp {
+    height: 100%;
+    margin: 0;
+   }
+   #chatapp {
+    display: flex;
+    flex-direction: row;
+   }
+   #rooms {
+    background-color: lightblue;
+    width: 200px;
+   }
+
+   .room{
+    padding: 5px 50px;
+
+    margin-bottom: 5px;
+
+   }
+
+   #message-form {
+    display: flex;
+   }
+  
+ 
+   #messages {
+    background-color: beige;
+    flex-grow: 1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column; /* ให้ข้อความเรียงแนวตั้ง */
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* ระยะห่างระหว่างข้อความกับปุ่ม Delete */
+}
+
+.message {
+    max-width: fit-content;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    word-wrap: break-word;
+    margin-bottom: 5px;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: #cc0000;
+}

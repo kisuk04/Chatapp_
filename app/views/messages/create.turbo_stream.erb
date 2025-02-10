@@ -1,0 +1,4 @@
+<%= turbo_stream.append "message-list", partial: "message", object: 
+@message %>
+
+<%= turbo_stream.replace "message-form", target: "message-form", partial: "messages/form", locals: { message: Message.new(room_id: @message.room.id) } %>
